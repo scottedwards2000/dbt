@@ -11,7 +11,7 @@ with
             min(o.order_date) as first_order_date,
             max(o.order_date) as most_recent_order_date,
             count(o.order_id) as number_of_orders,
-            sum(p.amount) as lifetime_value
+            sum(o.amount) as lifetime_value
         from orders o
         group by 1
 
