@@ -2,6 +2,7 @@ version: 2
 sources:
   - name: jaffle_shop
     database: dbt-tutorial
+    # since I didn't specify schema it will use name
     tables:
       - name: customers
       - name: orders
