@@ -1,3 +1,4 @@
+--test comment
 with
     customer_orders as (
 
